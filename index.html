@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js\"></script>
+    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js\"></script></head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="#home">Portfolio</a>
+                </div>
+                <button class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title"><span class="char">H</span><span class="char">i</span><span class="char">,</span><span class="char"> </span><span class="char">I</span><span class="char">'</span><span class="char">m</span><span class="char"> </span><span class="highlight" id="nameSpan"><span class="char">A</span><span class="char">t</span><span class="char">u</span><span class="char">l</span><span class="char"> </span><span class="char">M</span><span class="char">i</span><span class="char">t</span><span class="char">t</span><span class="char">a</span><span class="char">l</span></span></h1>
+                <p class="hero-subtitle">Full Stack Developer & AI Enthusiast</p>
+                <p class="hero-description">Building intelligent web applications with modern technologies</p>
+                <div class="tech-stack-hero">
+                    <span class="tech-badge"><i class="fab fa-react"></i> React</span>
+                    <span class="tech-badge"><i class="fab fa-node"></i> Node.js</span>
+                    <span class="tech-badge"><i class="fas fa-database"></i> MongoDB</span>
+                    <span class="tech-badge"><i class="fab fa-python"></i> Python</span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate Full Stack Developer and B.Tech Computer Science student at Maharishi Markandeshwar University. With expertise in Next.js, React, Node.js, and AI integration, I build intelligent and responsive web applications that solve real-world problems.</p>
+                    <p>My journey in tech is fueled by curiosity and a commitment to clean, efficient code. I've worked on AI-powered platforms, e-commerce solutions, and innovative projects that push the boundaries of web development. I'm continuously learning, participating in hackathons, and contributing to the tech community.</p>
+                </div>
+                <div class="about-image">
+                    <div class="tech-showcase">
+                        <div class="tech-circle" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <div class="tech-circle" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="tech-circle" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <i class="fab fa-node"></i>
+                        </div>
+                        <div class="tech-circle" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="center-circle">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image gradient-1">
+                        <div class="image-content">
+                            <i class="fas fa-shopping-cart"></i>
+                            <div class="tech-stack">
+                                <small><i class="fab fa-react"></i></small>
+                                <small><i class="fab fa-node"></i></small>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Full-Stack E-Commerce Application</h3>
+                    <p>A responsive e-commerce platform built with React, featuring secure payment processing, product management, and real-time inventory handling with Cloudinary media management.</p>
+                    <div class="project-tags">
+                        <span class="tag">React (Vite)</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">Razorpay</span>
+                    </div>
+                    <a href="https://github.com/ATULMITTAL2005" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image gradient-2">
+                        <div class="image-content">
+                            <i class="fas fa-leaf"></i>
+                            <div class="tech-stack">
+                                <small><i class="fab fa-js"></i></small>
+                                <small><i class="fas fa-database"></i></small>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>EcoShield - AI-Powered E-Waste Management</h3>
+                    <p>An intelligent platform leveraging Gemini APIs for device recognition and material analysis, providing eco-friendly recycling recommendations with gamification features.</p>
+                    <div class="project-tags">
+                        <span class="tag">Next.js</span>
+                        <span class="tag">Express.js</span>
+                        <span class="tag">Gemini API</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                    <a href="https://github.com/ATULMITTAL2005" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image gradient-3">
+                        <div class="image-content">
+                            <i class="fas fa-hand-paper"></i>
+                            <div class="tech-stack">
+                                <small><i class="fab fa-python"></i></small>
+                                <small><i class="fas fa-brain"></i></small>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Sign Language Detection Model</h3>
+                    <p>Smart India Hackathon 2025 Round 1 qualifier - Developed a scalable ML model for real-time sign language detection with high accuracy.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">OpenCV</span>
+                        <span class="tag">TensorFlow</span>
+                    </div>
+                    <a href="https://github.com/ATULMITTAL2005" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React.js (Vite)</li>
+                        <li>Next.js</li>
+                        <li>Tailwind CSS</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Backend & Databases</h3>
+                    <ul>
+                        <li>Node.js & Express.js</li>
+                        <li>Python & Flask</li>
+                        <li>MongoDB & Mongoose</li>
+                        <li>PostgreSQL</li>
+                        <li>RESTful APIs</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>AI & Tools</h3>
+                    <ul>
+                        <li>Gemini APIs</li>
+                        <li>Machine Learning</li>
+                        <li>Git & GitHub</li>
+                        <li>Firebase</li>
+                        <li>Data Structures & Algorithms</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">Feel free to reach out for any inquiries or collaboration opportunities</p>
+            
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:atulmittal542@gmail.com">atulmittal542@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+919992156915">+91 9992156915</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Faizabad, India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Atul Mittal. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/ATULMITTAL2005" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/atul-mittal-29b08727a" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:atulmittal542@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
